@@ -1,0 +1,13 @@
+{
+  "hosts": {
+    "dc01": {"criticality": "critical", "role": "domain controller", "owner": "IT"},
+    "vpn-gw01": {"criticality": "high", "role": "remote access gateway"},
+    "fw01": {"criticality": "high", "role": "perimeter firewall"},
+    "ws-042": {"criticality": "low", "role": "workstation"}
+  },
+  "users": {
+    "administrator": {"privileged": true},
+    "j.doe": {"privileged": false, "department": "Finance"}
+  },
+  "threat_intel": {"bad_ips": ["203.0.113.50"]}
+}
